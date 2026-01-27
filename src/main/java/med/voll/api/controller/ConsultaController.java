@@ -21,14 +21,14 @@ public class ConsultaController {
     @Transactional
     public ResponseEntity agendar(@RequestBody @Valid DadosAgendamentoConsulta dados) {
         //System.out.println(dados);
-        agenda.agendar(dados);
-        return ResponseEntity.ok(new DadosDetalhamentoConsulta(null, null, null, null));
+        var dto = agenda.agendar(dados);
+        return ResponseEntity.ok(dto);
     }
 
 
     @DeleteMapping
     @Transactional
-    public ResponseEntity cancelar(@RequestBody @Valid DadosCancelamentoConsulta dados){
+    public ResponseEntity cancelar(@RequestBody @Valid DadosCancelamentoConsulta dados) {
         agenda.cancelar(dados);
         return ResponseEntity.noContent().build();
     }
