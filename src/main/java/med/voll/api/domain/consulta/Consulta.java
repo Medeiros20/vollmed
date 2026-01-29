@@ -26,6 +26,7 @@ public class Consulta {
     @JoinColumn(name = "medico_id")
     private Medico medico;
 
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "paciente_id")
     private Paciente paciente;
@@ -38,5 +39,12 @@ public class Consulta {
 
     public void cancelar(MotivoCancelamento motivo) {
         this.motivoCancelamento = motivo;
+    }
+
+    public Consulta(Long id, Medico medico, Paciente paciente, LocalDateTime data) {
+        this.id = id;
+        this.medico = medico;
+        this.paciente = paciente;
+        this.data = data;
     }
 }
