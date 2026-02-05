@@ -35,7 +35,7 @@ A Voll.med é uma API REST desenvolvida para a gestão de uma clínica médica, 
 ## 🚀 Como Executar o Projeto
 ### Clone o repositório:
   ```
-  git clone https://github.com/seu-usuario/vollmed.git
+  git clone https://github.com/Medeiros20/vollmed.git
   ```
 ### Configure o Banco de Dados:
 - Certifique-se de ter o MySQL instalado.
