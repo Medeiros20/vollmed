@@ -50,7 +50,7 @@ A Voll.med é uma API REST desenvolvida para a gestão de uma clínica médica, 
 ## Endpoints Principais
 | Método | Endpoint | Descrição | Requer Token? |
 | :--- | :--- | :--- | :--- |
-| `POST` | `/login` | Autenticação e geração de token | Não |
+| `POST` | `/login` | Autenticação e geração de token | **Não** |
 | `POST` | `/medicos` | Cadastro de novo médico | **Sim** |
 | `GET` | `/medicos` | Listagem de médicos ativos (paginada) | **Sim** |
 | `PUT` | `/medicos` | Atualização de dados do médico | **Sim** |
